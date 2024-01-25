@@ -40,6 +40,10 @@ class DetailDataManager: NSObject, UITableViewDataSource, UITableViewDelegate, D
         return detailPublication[user] ?? []
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let publication = syncGetAllPost(forUser: UserDefaults.standard.string(forKey: "user") ?? "")[indexPath.row]
         guard let cell = tableView.dequeueReusableCell(withIdentifier: DetailTableViewCell.reuseIdentifier, for: indexPath) as? DetailTableViewCell

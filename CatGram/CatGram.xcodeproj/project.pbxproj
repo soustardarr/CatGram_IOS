@@ -13,6 +13,11 @@
 		7C007BBF2AFD2783001C4F3E /* AuthorizationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C007BBE2AFD2783001C4F3E /* AuthorizationDataManager.swift */; };
 		7C007BC12AFD2BC1001C4F3E /* AuthorizationDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C007BC02AFD2BC1001C4F3E /* AuthorizationDataManagerProtocol.swift */; };
 		7C007BC52AFD2DAF001C4F3E /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C007BC42AFD2DAF001C4F3E /* UserLogin.swift */; };
+		7C0975B62B62B62D002F0ACC /* SubscriptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0975B52B62B62D002F0ACC /* SubscriptionsController.swift */; };
+		7C0975B82B62B6A4002F0ACC /* SubscriptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0975B72B62B6A4002F0ACC /* SubscriptionsCell.swift */; };
+		7C0975BA2B62B6D0002F0ACC /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0975B92B62B6D0002F0ACC /* SubscriptionsView.swift */; };
+		7C0975BC2B62BB87002F0ACC /* SubscriptionsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0975BB2B62BB87002F0ACC /* SubscriptionsDataManager.swift */; };
+		7C0975BE2B62BBA8002F0ACC /* Subsciption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0975BD2B62BBA8002F0ACC /* Subsciption.swift */; };
 		7C1B1ECB2B26030500E5B30E /* CatGramData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C1B1EC92B26030500E5B30E /* CatGramData.xcdatamodeld */; };
 		7C3AD3FA2B29D3CD00435406 /* CreatingPublicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3AD3F92B29D3CD00435406 /* CreatingPublicationController.swift */; };
 		7C3AD3FC2B29D3F800435406 /* CreatingPublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3AD3FB2B29D3F800435406 /* CreatingPublicationView.swift */; };
@@ -53,6 +58,11 @@
 		7C007BBE2AFD2783001C4F3E /* AuthorizationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationDataManager.swift; sourceTree = "<group>"; };
 		7C007BC02AFD2BC1001C4F3E /* AuthorizationDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationDataManagerProtocol.swift; sourceTree = "<group>"; };
 		7C007BC42AFD2DAF001C4F3E /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		7C0975B52B62B62D002F0ACC /* SubscriptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsController.swift; sourceTree = "<group>"; };
+		7C0975B72B62B6A4002F0ACC /* SubscriptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsCell.swift; sourceTree = "<group>"; };
+		7C0975B92B62B6D0002F0ACC /* SubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
+		7C0975BB2B62BB87002F0ACC /* SubscriptionsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsDataManager.swift; sourceTree = "<group>"; };
+		7C0975BD2B62BBA8002F0ACC /* Subsciption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsciption.swift; sourceTree = "<group>"; };
 		7C1B1ECA2B26030500E5B30E /* CatGramData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CatGramData.xcdatamodel; sourceTree = "<group>"; };
 		7C3AD3F92B29D3CD00435406 /* CreatingPublicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingPublicationController.swift; sourceTree = "<group>"; };
 		7C3AD3FB2B29D3F800435406 /* CreatingPublicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingPublicationView.swift; sourceTree = "<group>"; };
@@ -153,8 +163,6 @@
 				7C007BAC2AFC1473001C4F3E /* Authorization */,
 				7C8D571F2AE9924E00DD0A07 /* Profile */,
 				7C72EC612AE97EBB00D8DDC7 /* Detail */,
-				7CA1DE112B128EC40045E67B /* Followers */,
-				7CA1DE122B128F180045E67B /* Subscriptions */,
 				7C007BB82AFCFFCF001C4F3E /* Fonts */,
 				7C3E3DDC2AE9740E00603C03 /* Assets.xcassets */,
 				7C3E3DDE2AE9740E00603C03 /* LaunchScreen.storyboard */,
@@ -214,6 +222,8 @@
 				7C8D57242AEFEFC500DD0A07 /* ProfileCollectionViewCell.swift */,
 				7C8D57202AE992AC00DD0A07 /* ProfileView.swift */,
 				7C3E3DD72AE9740D00603C03 /* ViewController.swift */,
+				7CA1DE122B128F180045E67B /* Subscriptions */,
+				7CA1DE112B128EC40045E67B /* Followers */,
 				7C3AD3F82B29D33900435406 /* CreatingPublication */,
 				7CA1DE0C2B1227F90045E67B /* Settings */,
 			);
@@ -244,6 +254,11 @@
 		7CA1DE122B128F180045E67B /* Subscriptions */ = {
 			isa = PBXGroup;
 			children = (
+				7C0975B52B62B62D002F0ACC /* SubscriptionsController.swift */,
+				7C0975B72B62B6A4002F0ACC /* SubscriptionsCell.swift */,
+				7C0975B92B62B6D0002F0ACC /* SubscriptionsView.swift */,
+				7C0975BB2B62BB87002F0ACC /* SubscriptionsDataManager.swift */,
+				7C0975BD2B62BBA8002F0ACC /* Subsciption.swift */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -347,6 +362,7 @@
 				7C4EC0D12B2C939C007B6320 /* UpdatePublicationViewController.swift in Sources */,
 				7C8D57292AF02A2100DD0A07 /* DetailViewController.swift in Sources */,
 				7CC8E0072AF41197005E2B8E /* ProfilePublication.swift in Sources */,
+				7C0975BE2B62BBA8002F0ACC /* Subsciption.swift in Sources */,
 				7C007BB02AFC14FF001C4F3E /* AuthorizationViewController.swift in Sources */,
 				7C8D57232AEFDD9E00DD0A07 /* ProfileDataManager.swift in Sources */,
 				7CA1DE102B12285A0045E67B /* SettingsView.swift in Sources */,
@@ -356,6 +372,8 @@
 				7CA1DE142B128F6E0045E67B /* FollowersViewController.swift in Sources */,
 				7CC8E00F2AF430A5005E2B8E /* DetailView.swift in Sources */,
 				7C3E3DD42AE9740D00603C03 /* AppDelegate.swift in Sources */,
+				7C0975BA2B62B6D0002F0ACC /* SubscriptionsView.swift in Sources */,
+				7C0975B82B62B6A4002F0ACC /* SubscriptionsCell.swift in Sources */,
 				7CC8E00B2AF4138D005E2B8E /* DetailPublication.swift in Sources */,
 				7C007BC12AFD2BC1001C4F3E /* AuthorizationDataManagerProtocol.swift in Sources */,
 				7C4D85AD2B2612DB0001493A /* RegistraitionEntity+CoreDataProperties.swift in Sources */,
@@ -363,6 +381,7 @@
 				7C3AD3FA2B29D3CD00435406 /* CreatingPublicationController.swift in Sources */,
 				7CA1DE162B128F870045E67B /* FollowersView.swift in Sources */,
 				7C1B1ECB2B26030500E5B30E /* CatGramData.xcdatamodeld in Sources */,
+				7C0975B62B62B62D002F0ACC /* SubscriptionsController.swift in Sources */,
 				7CA1DE1C2B1293A30045E67B /* FollowersDataManager.swift in Sources */,
 				7C8011032B22417000906E8D /* RegistrationViewController.swift in Sources */,
 				7C3E3DD62AE9740D00603C03 /* SceneDelegate.swift in Sources */,
@@ -373,6 +392,7 @@
 				7C4D85B22B261D7E0001493A /* RegistrationDataManager.swift in Sources */,
 				7C007BBF2AFD2783001C4F3E /* AuthorizationDataManager.swift in Sources */,
 				7C4D85AC2B2612DB0001493A /* RegistraitionEntity+CoreDataClass.swift in Sources */,
+				7C0975BC2B62BB87002F0ACC /* SubscriptionsDataManager.swift in Sources */,
 				7C007BAE2AFC14D5001C4F3E /* AuthorizationView.swift in Sources */,
 				7CC8E0092AF41232005E2B8E /* DataManagerProtocol.swift in Sources */,
 				7C007BC52AFD2DAF001C4F3E /* UserLogin.swift in Sources */,

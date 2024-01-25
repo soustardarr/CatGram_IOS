@@ -38,7 +38,6 @@ class ProfileDataManager: NSObject, UICollectionViewDataSource, UICollectionView
         cell.config(with: syncGetAllPosts(forUser: UserDefaults.standard.object(forKey: "user") as? String ?? "")[indexPath.row])
         return cell
     }
- 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         didSelectPublication!(indexPath)
     }
